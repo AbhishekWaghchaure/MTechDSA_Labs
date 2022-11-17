@@ -49,4 +49,3 @@ if (kr > 3) {
   print("The curve is Platykurtic")
   message("Kurtosis: ", kr)
 }
-
