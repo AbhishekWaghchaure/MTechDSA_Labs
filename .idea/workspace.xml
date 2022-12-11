@@ -1,8 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f067aa6a-07d8-4829-b69e-facfd6bd5d53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/AML_MiniProject_2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/LabAssignment_2.1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/LabAssignment_2.2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/LabAssignment_3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/LabAssignment_5-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/LabAssignment_6-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/.ipynb_checkpoints/LabAssignment_7-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Lab_Assignment4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Mall_Customers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_1 - Jupyter Notebook.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_2.1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_2.2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_5 - Jupyter Notebook.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_6 - Jupyter Notebook.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/LabAssignment_7 - Jupyter Notebook.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/Pdf/Lab_Assignment4 - Jupyter Notebook.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/our_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/LabAssignment_1 - Jupyter Notebook.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/LabAssignment_2.1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/LabAssignment_2.2.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/LabAssignment_3.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/LabAssignment_5 - Jupyter Notebook.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/LabAssignment_6 - Jupyter Notebook.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/pdf2docx/Lab_Assignment4 - Jupyter Notebook.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/videos/ppo-cartpole-step-0-to-step-500.meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AML_Lab/videos/ppo-cartpole-step-0-to-step-500.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/DADS LAB-5.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/LabAssignment_2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/LabAssignment_3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/LabAssignment_4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/LabAssignment_5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/heart.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DADS_Lab/sales_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCT_Lab/SCT_Lab8.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportToHTML/LabAssignment_5.ipynb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AML_Lab/AML_MiniProject_2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AML_Lab/AML_MiniProject_2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AML_Lab/LabAssignment_2.1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_2.1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AML_Lab/LabAssignment_2.2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_2.2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AML_Lab/LabAssignment_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AML_Lab/LabAssignment_4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AML_Lab/LabAssignment_5.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IaulYdPnmSTcQsIOAidjWM9nWY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/abhishekwaghchaure/Downloads",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Downloads" />
+      <recent name="$PROJECT_DIR$/DADS_Lab" />
+      <recent name="$PROJECT_DIR$/AML_Lab" />
+      <recent name="$USER_HOME$/Desktop/MyBootCamp/FeatureEngineering" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
 </project>

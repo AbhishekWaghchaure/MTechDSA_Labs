@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>LabAssignment_5.ipynb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #727072;}
+.s1 { color: #ff6188;}
+.s2 { color: #fcfcfa;}
+.s3 { color: #939293;}
+.s4 { color: #ffd866;}
+.s5 { color: #ab9df2;}
+</style>
+</head>
+<body bgcolor="#2d2a2e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+LabAssignment_5.ipynb</font>
+</center></td></tr></table>
+<pre><span class="s0">#%% 
+</span><span class="s1">import </span><span class="s2">numpy </span><span class="s1">as </span><span class="s2">np</span>
+<span class="s1">import </span><span class="s2">matplotlib</span><span class="s3">.</span><span class="s2">pyplot </span><span class="s1">as </span><span class="s2">plt</span>
+<span class="s1">import </span><span class="s2">pandas </span><span class="s1">as </span><span class="s2">pd</span>
+<span class="s2">data </span><span class="s1">= </span><span class="s2">pd</span><span class="s3">.</span><span class="s2">read_csv</span><span class="s3">(</span><span class="s4">&quot;Mall_Customers.csv&quot;</span><span class="s3">)</span>
+<span class="s2">data</span>
+<span class="s0">#%% 
+</span><span class="s2">data</span><span class="s3">.</span><span class="s2">shape</span>
+<span class="s0">#%% 
+# checking for NULL data in the dataset</span>
+<span class="s2">data</span><span class="s3">.</span><span class="s2">isnull</span><span class="s3">().</span><span class="s2">sum</span><span class="s3">()</span>
+<span class="s0">#%% 
+</span><span class="s2">x </span><span class="s1">= </span><span class="s2">data</span><span class="s3">.</span><span class="s2">loc</span><span class="s3">[</span><span class="s1">:</span><span class="s3">, [</span><span class="s4">'Annual Income (k$)'</span><span class="s3">,</span>
+                 <span class="s4">'Spending Score (1-100)'</span><span class="s3">]].</span><span class="s2">values</span>
+<span class="s0">#%% 
+</span><span class="s2">x</span><span class="s3">.</span><span class="s2">shape</span>
+<span class="s0">#%% md 
+</span><span class="s2">Before we apply the DBSCAN model, first, we need to obtain its two parameters. 
+1.MinPoints: We can obtain the minimum number of Points to be used to recognize a cluster 
+2.Epsilon (Eps) 
+ 
+</span><span class="s0">#%% 
+</span><span class="s1">from </span><span class="s2">sklearn</span><span class="s3">.</span><span class="s2">neighbors </span><span class="s1">import </span><span class="s2">NearestNeighbors </span><span class="s0"># importing the library</span>
+<span class="s2">neighb </span><span class="s1">= </span><span class="s2">NearestNeighbors</span><span class="s3">(</span><span class="s2">n_neighbors</span><span class="s1">=</span><span class="s5">2</span><span class="s3">) </span><span class="s0"># creating an object of the NearestNeighbors class</span>
+<span class="s2">nbrs</span><span class="s1">=</span><span class="s2">neighb</span><span class="s3">.</span><span class="s2">fit</span><span class="s3">(</span><span class="s2">x</span><span class="s3">) </span><span class="s0"># fitting the data to the object</span>
+<span class="s2">distances</span><span class="s3">,</span><span class="s2">indices</span><span class="s1">=</span><span class="s2">nbrs</span><span class="s3">.</span><span class="s2">kneighbors</span><span class="s3">(</span><span class="s2">x</span><span class="s3">) </span><span class="s0"># finding the nearest neighbours</span>
+<span class="s0">#%% md 
+</span><span class="s2">Sorting and plot the distances between the data points 
+</span><span class="s0">#%% 
+</span><span class="s2">distances </span><span class="s1">= </span><span class="s2">np</span><span class="s3">.</span><span class="s2">sort</span><span class="s3">(</span><span class="s2">distances</span><span class="s3">, </span><span class="s2">axis </span><span class="s1">= </span><span class="s5">0</span><span class="s3">) </span><span class="s0"># sorting the distances</span>
+<span class="s2">distances </span><span class="s1">= </span><span class="s2">distances</span><span class="s3">[</span><span class="s1">:</span><span class="s3">, </span><span class="s5">1</span><span class="s3">] </span><span class="s0"># taking the second column of the sorted distances</span>
+<span class="s2">plt</span><span class="s3">.</span><span class="s2">rcParams</span><span class="s3">[</span><span class="s4">'figure.figsize'</span><span class="s3">] </span><span class="s1">= </span><span class="s3">(</span><span class="s5">5</span><span class="s3">,</span><span class="s5">3</span><span class="s3">) </span><span class="s0"># setting the figure size</span>
+<span class="s2">plt</span><span class="s3">.</span><span class="s2">plot</span><span class="s3">(</span><span class="s2">distances</span><span class="s3">) </span><span class="s0"># plotting the distances</span>
+<span class="s2">plt</span><span class="s3">.</span><span class="s2">show</span><span class="s3">() </span><span class="s0"># showing the plot</span>
+<span class="s0">#%% md 
+</span><span class="s2">From the above plot, we note the maximum curvature of the curve is about eight, and thus we picked our Eps as 8. 
+ 
+We now have our two parameters as: 
+MinPoints = 4 
+Eps = 8 
+</span><span class="s0">#%% 
+</span><span class="s1">from </span><span class="s2">sklearn</span><span class="s3">.</span><span class="s2">cluster </span><span class="s1">import </span><span class="s2">DBSCAN</span>
+<span class="s0"># cluster the data into five clusters</span>
+<span class="s2">dbscan </span><span class="s1">= </span><span class="s2">DBSCAN</span><span class="s3">(</span><span class="s2">eps </span><span class="s1">= </span><span class="s5">8</span><span class="s3">, </span><span class="s2">min_samples </span><span class="s1">= </span><span class="s5">4</span><span class="s3">).</span><span class="s2">fit</span><span class="s3">(</span><span class="s2">x</span><span class="s3">) </span><span class="s0"># fitting the model</span>
+<span class="s2">labels </span><span class="s1">= </span><span class="s2">dbscan</span><span class="s3">.</span><span class="s2">labels_ </span><span class="s0"># getting the labels</span>
+<span class="s0">#%% 
+</span><span class="s2">plt</span><span class="s3">.</span><span class="s2">scatter</span><span class="s3">(</span><span class="s2">x</span><span class="s3">[</span><span class="s1">:</span><span class="s3">, </span><span class="s5">0</span><span class="s3">], </span><span class="s2">x</span><span class="s3">[</span><span class="s1">:</span><span class="s3">,</span><span class="s5">1</span><span class="s3">], </span><span class="s2">c </span><span class="s1">= </span><span class="s2">labels</span><span class="s3">, </span><span class="s2">cmap</span><span class="s1">= </span><span class="s4">&quot;plasma&quot;</span><span class="s3">) </span><span class="s0"># plotting the clusters</span>
+<span class="s2">plt</span><span class="s3">.</span><span class="s2">xlabel</span><span class="s3">(</span><span class="s4">&quot;Income&quot;</span><span class="s3">) </span><span class="s0"># X-axis label</span>
+<span class="s2">plt</span><span class="s3">.</span><span class="s2">ylabel</span><span class="s3">(</span><span class="s4">&quot;Spending Score&quot;</span><span class="s3">) </span><span class="s0"># Y-axis label</span>
+<span class="s2">plt</span><span class="s3">.</span><span class="s2">show</span><span class="s3">() </span><span class="s0"># showing the plot</span></pre>
+</body>
+</html>
